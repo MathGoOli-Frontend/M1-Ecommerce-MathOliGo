@@ -39,7 +39,7 @@ main {
 }
 /* card deck */
 .main-cards {
-  min-height: 50vh;
+  min-height: 100vh;
   width: 75%;
 }
 
@@ -53,6 +53,7 @@ main {
 /* cards */
 .deck{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card{
@@ -68,7 +69,7 @@ main {
   display: flex;
   
   width: 207px;
-  height: 300px;
+  height: 310px;
 
   align-items: center;
   flex-direction: column;
@@ -192,4 +193,34 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+
+
+.cart-list li{
+  display: flex;
+
+}
+
+.cart-list img{
+  width: 60px;
+  height: 60px;
+}
+.item-cart-info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cart-name{
+  font-size: 16px;
+  
+}
+.item-cart-info span{
+  color: #2e245e;
+  font-weight: bold;
+}
+
+.item-cart-info a {
+  font-size: 14px;
+  
 }
