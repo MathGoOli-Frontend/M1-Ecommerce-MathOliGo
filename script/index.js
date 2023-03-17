@@ -21,10 +21,21 @@ function dataBaseFilterById(data, id){
 
 // filtro remove id
 function dataBaseFilterExcludeById(data, id){
-    userCart = data.filter(function(wear){
-        return !(wear.id == id)
-    })
+    let newData = []
+    let isDelete = false
     
+    for(let i = 0; i < data.length; i++){
+        if(data[i].id == id && !isDelete){
+            
+            isDelete = true
+
+
+            console.log(id)
+        }else{
+            newData.push(data[i])
+        }
+    }
+    userCart = newData
 }
 
 // filtro por nome e tag
